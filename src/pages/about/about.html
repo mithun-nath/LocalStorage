@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-card *ngFor="let list of lists">
+  <ion-card-content>
+    <ion-card-title>
+      {{ list.title }}
+    </ion-card-title>
+    {{ list.content }}
+  </ion-card-content>
+</ion-card>
+</ion-content>
